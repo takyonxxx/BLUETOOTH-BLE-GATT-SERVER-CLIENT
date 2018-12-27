@@ -1,6 +1,10 @@
 # BLUETOOTH-BLE-GATT-SERVER-CLIENT
 BLUETOOTH BLE GATT SERVER CLIENT EXAMPLE
 
+In qt pro add
+
+QT += bluetooth
+
 In MainWindow Constructor create connections:
 
 connect(&m_bleConnection, &BluetoothClient::statusChanged, this, &MainWindow::statusChanged);
